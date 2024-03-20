@@ -8,6 +8,6 @@ export interface IResponse {
   body: Record<string, any> | null;
 }
 
-export abstract class IBaseController {
+export abstract class BaseController {
   abstract handle(request: IRequest): Promise<IResponse>
 }
